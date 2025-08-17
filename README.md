@@ -1,2 +1,2 @@
-# reset-css
+# reset.css
 reset.css
