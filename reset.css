@@ -1,0 +1,127 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+:where(:root) {
+  line-height: 1.5;
+  scrollbar-gutter: stable;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* sections */
+:where(address) {
+  font-style: unset;
+}
+:where(body) {
+  margin: unset;
+  min-block-size: 100dvb;
+}
+:where(h1, h2, h3, h4, h5, h6) {
+  font-size: unset;
+  font-weight: unset;
+  margin-block: unset;
+}
+
+/* grouping-content */
+:where(blockquote, dl, figure, ol, p, pre, ul) {
+  margin-block: unset;
+}
+:where(blockquote, figure) {
+  margin-inline: unset;
+}
+:where(dd) {
+  margin-inline-start: unset;
+}
+:where(ol, ul) {
+  list-style: none;
+  padding-inline-start: unset;
+}
+
+/* text-level-semantics */
+:where(a, abbr, u) {
+  text-decoration-line: unset;
+}
+:where(a) {
+  color: unset;
+}
+:where(b, strong) {
+  font-weight: unset;
+}
+:where(cite, em, i) {
+  font-style: unset;
+}
+:where(code, kbd, pre, samp) {
+  font-family: unset;
+}
+:where(mark) {
+  background-color: unset;
+  color: unset;
+}
+:where(small, sub, sup) {
+  font-size: unset;
+}
+:where(sub, sup) {
+  vertical-align: unset;
+}
+
+/* embedded-content */
+:where(audio, embed, iframe, img, object, picture, video) {
+  vertical-align: bottom;
+}
+:where(iframe) {
+  border: unset;
+}
+
+/* tabular-data */
+:where(caption, th) {
+  text-align: unset;
+}
+:where(table) {
+  border-collapse: collapse;
+}
+:where(td, th) {
+  padding: unset;
+  vertical-align: unset;
+}
+:where(th) {
+  font-weight: unset;
+}
+
+/* forms */
+:where(button, input, select, textarea),
+::file-selector-button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: unset;
+  border: unset;
+  color: unset;
+  font: unset;
+  padding: unset;
+  text-align: unset;
+}
+:where(fieldset) {
+  border: unset;
+  margin-inline: unset;
+  padding: unset;
+}
+:where(input:is([type='checkbox' i], [type='radio' i])) {
+  margin: unset;
+}
+:where(legend) {
+  padding-inline: unset;
+}
+
+/* interactive-elements */
+:where(details) {
+  display: block;
+}
+:where(summary) {
+  display: list-item;
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
