@@ -11,6 +11,8 @@
   text-size-adjust: 100%;
 }
 
+/* Vocabulary source: https://html.spec.whatwg.org/#toc-semantics */
+
 /* sections */
 :where(address) {
   font-style: unset;
@@ -65,6 +67,11 @@
 }
 :where(sub, sup) {
   vertical-align: unset;
+}
+
+/* edits */
+:where(del, ins) {
+  text-decoration-line: unset;
 }
 
 /* embedded-content */
