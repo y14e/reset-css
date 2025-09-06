@@ -44,7 +44,7 @@
 
 /* text-level-semantics */
 :where(a, abbr, u) {
-  text-decoration-line: unset;
+  text-decoration: unset;
 }
 :where(a) {
   color: unset;
@@ -71,7 +71,7 @@
 
 /* edits */
 :where(del, ins) {
-  text-decoration-line: unset;
+  text-decoration: unset;
 }
 
 /* embedded-content */
