@@ -3,15 +3,13 @@
 ::after {
   box-sizing: border-box;
 }
-:where(:root) {
+:where(:root, :host) {
   line-height: 1.5;
   scrollbar-gutter: stable;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
-
-/* Vocabulary source: https://html.spec.whatwg.org/#toc-semantics */
 
 /* sections */
 :where(address) {
