@@ -36,7 +36,7 @@
   margin-inline-start: unset;
 }
 :where(ol, ul) {
-  list-style: none;
+  list-style-type: none;
   padding-inline-start: unset;
 }
 
@@ -86,6 +86,7 @@
 }
 :where(table) {
   border-collapse: collapse;
+  border-color: unset;
 }
 :where(td, th) {
   padding: unset;
@@ -123,9 +124,18 @@
 :where(details) {
   display: block;
 }
+:where(dialog) {
+  background-color: unset;
+  border: unset;
+  color: unset;
+  padding: unset;
+  &::backdrop {
+    background-color: unset;
+  }
+}
 :where(summary) {
   display: list-item;
-  list-style: none;
+  list-style-type: none;
   &::-webkit-details-marker {
     display: none;
   }
