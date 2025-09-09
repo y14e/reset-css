@@ -26,7 +26,7 @@
 }
 
 /* grouping-content */
-:where(blockquote, dl, figure, ol, p, pre, ul) {
+:where(blockquote, dl, figure, hr, ol, p, pre, ul) {
   margin-block: unset;
 }
 :where(blockquote, figure) {
@@ -34,6 +34,9 @@
 }
 :where(dd) {
   margin-inline-start: unset;
+}
+:where(hr) {
+  border: unset;
 }
 :where(ol, ul) {
   list-style-type: none;
@@ -55,6 +58,9 @@
 }
 :where(code, kbd, pre, samp) {
   font-family: unset;
+}
+:where(code, pre) {
+  white-space: unset;
 }
 :where(mark) {
   background-color: unset;
@@ -85,8 +91,9 @@
   text-align: unset;
 }
 :where(table) {
+  border: unset;
   border-collapse: collapse;
-  border-color: unset;
+  border-spacing: unset;
 }
 :where(td, th) {
   padding: unset;
@@ -102,9 +109,12 @@
   -webkit-appearance: none;
   appearance: none;
   background-color: unset;
-  border: unset;
+  border-color: unset;
+  border-style: unset;
+  border-width: unset;
   color: unset;
-  font: unset;
+  font-family: inherit;
+  font-size: unset;
   padding: unset;
   text-align: unset;
 }
@@ -125,10 +135,10 @@
   display: block;
 }
 :where(dialog) {
-  background-color: unset;
   border: unset;
   color: unset;
   padding: unset;
+  &,
   &::backdrop {
     background-color: unset;
   }
@@ -138,5 +148,17 @@
   list-style-type: none;
   &::-webkit-details-marker {
     display: none;
+  }
+}
+
+/* prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
