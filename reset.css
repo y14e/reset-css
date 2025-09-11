@@ -113,8 +113,7 @@
   border-style: unset;
   border-width: unset;
   color: unset;
-  font-family: inherit;
-  font-size: unset;
+  font: unset;
   padding: unset;
   text-align: unset;
 }
