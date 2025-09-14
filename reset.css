@@ -93,7 +93,6 @@
 :where(table) {
   border: unset;
   border-collapse: collapse;
-  border-spacing: unset;
 }
 :where(td, th) {
   padding: unset;
@@ -109,9 +108,7 @@
   -webkit-appearance: none;
   appearance: none;
   background-color: unset;
-  border-color: unset;
-  border-style: unset;
-  border-width: unset;
+  border: unset;
   color: unset;
   font: unset;
   padding: unset;
