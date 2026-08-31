@@ -119,7 +119,7 @@
   margin-inline: unset;
   padding: unset;
 }
-:where(input:is([type='checkbox' i], [type='radio' i])) {
+:where(input:is([type="checkbox" i], [type="radio" i])) {
   margin: unset;
 }
 :where(legend) {
