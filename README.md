@@ -1,3 +1,3 @@
 # reset.css
 
-For internal use.
+reset.css
