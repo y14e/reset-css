@@ -21,7 +21,7 @@
   text-size-adjust: 100%;
 }
 
-/* sections */
+/* Sections */
 :where(address) {
   font-style: unset;
 }
@@ -35,7 +35,7 @@
   margin-block: unset;
 }
 
-/* grouping-content */
+/* Grouping content */
 :where(blockquote, dl, figure, hr, ol, p, pre, ul) {
   margin-block: unset;
 }
@@ -53,7 +53,7 @@
   padding-inline-start: unset;
 }
 
-/* text-level-semantics */
+/* Text-level semantics */
 :where(a, abbr, u) {
   text-decoration: unset;
 }
@@ -83,12 +83,12 @@
   vertical-align: unset;
 }
 
-/* edits */
+/* Edits */
 :where(del, ins) {
   text-decoration: unset;
 }
 
-/* embedded-content */
+/* Embedded content */
 :where(audio, embed, iframe, img, object, picture, video) {
   vertical-align: bottom;
 }
@@ -96,7 +96,7 @@
   border: unset;
 }
 
-/* tabular-data */
+/* Tabular data */
 :where(caption, th) {
   text-align: unset;
 }
@@ -112,7 +112,7 @@
   font-weight: unset;
 }
 
-/* forms */
+/* Forms */
 :where(button, input, select, textarea),
 ::file-selector-button {
   -webkit-appearance: none;
@@ -136,7 +136,7 @@
   padding-inline: unset;
 }
 
-/* interactive-elements */
+/* Interactive elements */
 :where(details) {
   display: block;
 }
